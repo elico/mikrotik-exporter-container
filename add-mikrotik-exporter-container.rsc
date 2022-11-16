@@ -22,4 +22,4 @@
 /container/envs/add name=prom_exporter_envs key=ROUTES_METRICS value="1"
 /container/envs/add name=prom_exporter_envs key=NETWATCH_METRICS value="1"
 
-/container/add dns=172.17.0.254 remote-image=elicro/mikrotik-exporter::latest interface=veth5 root-dir=disk1/mt-exporter envlist=prom_exporter_envs start-on-boot=yes
+/container/add dns=172.17.0.254 remote-image=elicro/mikrotik-exporter:latest interface=veth5 root-dir=disk1/mt-exporter envlist=prom_exporter_envs start-on-boot=yes
