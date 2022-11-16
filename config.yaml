@@ -1,0 +1,28 @@
+devices:
+  - name: ###ROUTER_NAME###
+    address: ###ADDRESS###
+    user: ###USER###
+    password: ###PASSWORD###
+    port: ###PORT###    
+
+features:
+  bgp: true
+  conntrack: true
+  dhcp: true
+  dhcpl: true
+  dhcpv6: true
+  firmware: true
+  health: true   
+  routes: true
+  poe: true
+  pools: true
+  optics: true
+  w60g: true
+  wlansta: true
+  capsman: true
+  wlanif: true
+  monitor: true
+  ipsec: true
+  lte: true
+  netwatch: true
+
