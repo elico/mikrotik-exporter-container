@@ -8,6 +8,8 @@ fi
 
 DONT_START="0"
 
+if [ ! -f "/config/custom" ];then
+
 if [ -z "${ROUTER_NAME}" ];then
 	DONT_START="1"
 	echo "Missing variable: ROUTER_NAME"
@@ -116,6 +118,8 @@ fi
 
 if [ -z "${NETWATCH_METRICS}"  ];then
 	sed -i -e "s@netwatch: true@netwatch: false@g" "${CONFIG_FILE}"
+fi
+
 fi
 
 if [ "${DONT_START}" -gt "0" ];then
